@@ -33,10 +33,14 @@ def lambda_handler(event, context):
 
     #     raise e
 
+    print("debug mode")
+
     return {
         "statusCode": 200,
-        "body": json.dumps({
-            "message": "hello world",
-            # "location": ip.text.replace("\n", "")
-        }),
+        "body": json.dumps(
+            {
+                "message": "hello world",
+                # "location": ip.text.replace("\n", "")
+            }
+        ),
     }
